@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>4loyak!</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/nes.css@2.3.0/css/nes.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/atom-one-light.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body class="min-h-screen text-ink">
+    <div class="page-noise"></div>
+    <main class="max-w-5xl mx-auto px-6 py-12">
+      <header class="mb-10 flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+        <h1 class="text-2xl md:text-3xl font-normal">
+          <a href="/">4loyak!</a>
+        </h1>
+        <div class="flex items-center gap-3">
+          <p class="text-xs md:text-sm text-ink/70">Dark:</p>
+          <label class="flex items-center gap-1">
+            <input type="radio" class="nes-radio" name="dark-theme" id="theme-yes" />
+            <span class="text-xs">Yes</span>
+          </label>
+          <label class="flex items-center gap-1">
+            <input type="radio" class="nes-radio" name="dark-theme" id="theme-no" checked />
+            <span class="text-xs">No</span>
+          </label>
+        </div>
+        <nav class="flex flex-wrap gap-2 items-center text-xs md:text-sm">
+          <a class="nes-btn is-success" href="#projects">Projects</a>
+          <a class="nes-btn is-warning" href="/contact">Contact</a>
+          <a class="nes-btn is-error" href="https://github.com/harsh-0409"><i class="nes-icon github"></i></a>
+        </nav>
+      </header>
+
+      <section class="nes-container with-title is-rounded bg-cream">
+        <p class="title">Hello</p>
+        <div class="grid gap-8 lg:grid-cols-[2fr,1fr]">
+          <div class="space-y-4">
+            <div>
+              <h1 class="text-3xl md:text-4xl font-bold">Harsh Raj</h1>
+              <h4 class="text-lg font-normal mt-2">Harsh! (@harsh-0409)</h4>
+            </div>
+            <p class="text-m leading-relaxed max-w-xl">
+              Engineering enthusiast and lifelong learner. I have built a lot of things, but I care more about sharing what I learn.
+            </p>
+            <div class="flex flex-wrap gap-3">
+              <a
+                class="nes-btn"
+                href="mailto:harshraj8835@gmail.com"
+                >Email</a
+              >
+              <a class="nes-btn" href="https://github.com/harsh-0409">GitHub</a>
+            </div>
+          </div>
+          <div class="space-y-4">
+            <div class="nes-balloon from-right">
+              <p class="text-sm font-normal">My Local Time</p>
+              <div class="text-sm mt-2 text-base opacity-100" id="time-display"></div>
+            </div>
+            
+          </div>
+        </div>
+      </section>
+
+      <h2 id="projects" class="mt-12 text-2xl font-normal">Projects</h2>
+<div class="mt-6 gap-6 grid gap-6 md:grid-cols-2">
+
+  <!-- CCE Project -->
+  <div class="nes-container is-rounded bg-cream">
+    <h3 class="text-lg font-normal">CCE — Collaborative Code Editor</h3>
+    <p class="mt-3 leading-relaxed">
+      A real-time collaborative code editor where multiple users can edit code simultaneously — built with web technologies like Node.js/Socket.io (see GitHub for details).
+    </p>
+    <a class="nes-btn mt-4 is-primary" href="https://github.com/harsh-0409/CCE">View Project</a>
+    <a class="nes-btn mt-4" href="https://github.com/harsh-0409/CCE">Github</a>
+  </div>
+
+  <!-- Gesture Controlled Lighting System -->
+  <div class="nes-container is-rounded bg-cream">
+    <h3 class="text-lg font-normal">Gesture-Controlled Lighting System</h3>
+    <p class="mt-3 leading-relaxed">
+      An interactive lighting control system using gesture inputs — explore the repo to see how hardware and code combine to form the experience.
+    </p>
+    <a class="nes-btn mt-4 is-primary" href="https://github.com/harsh-0409/Gesture-Controlled-Lighting-System">View Project</a>
+    <a class="nes-btn mt-4" href="https://github.com/harsh-0409/Gesture-Controlled-Lighting-System">Github</a>
+  </div>
+
+  <!-- Real-Time Collaborative Text Editor -->
+  <div class="nes-container is-rounded bg-cream">
+    <h3 class="text-lg font-normal">Real-Time Collaborative Text Editor</h3>
+    <p class="mt-3 leading-relaxed">
+      A collaborative text editor (forked from another project), enabling users to work together on text content in real time.
+    </p>
+    <a class="nes-btn mt-4 is-primary" href="https://github.com/harsh-0409/real-time-collaborative-text-editor">View Project</a>
+    <a class="nes-btn mt-4" href="https://github.com/harsh-0409/real-time-collaborative-text-editor">Github</a>
+  </div>
+
+  <!-- Sign Language to Audio -->
+  <div class="nes-container is-rounded bg-cream">
+    <h3 class="text-lg font-normal">Sign Language to Audio</h3>
+    <p class="mt-3 leading-relaxed">
+      A computer vision-based system that detects sign language and converts it into audio output — bridging communication gaps.
+    </p>
+    <a class="nes-btn mt-4 is-primary" href="https://github.com/harsh-0409/Sign-Language-to-audio">View Project</a>
+    <a class="nes-btn mt-4" href="https://github.com/harsh-0409/Sign-Language-to-audio">Github</a>
+  </div>
+
+</div>
+
+
+      <h2 class="mt-6 text-center text-m text-ink/70">
+        And many more projects on <a href="https://github.com/harsh-0409?tab=repositories "class="text-primary hover:underline">Github</a>!
+      </h2>
+
+      <h2 id="github" class="mt-12 text-2xl font-normal">Github</h2>
+      <div class="mt-6 gap-6">
+        <div class="nes-container is-rounded bg-cream">
+          <h3 class="text-lg font-normal">Contributions</h3>
+          <p class="text-sm">github.com/harsh-0409</p>
+          <div id="contributions-chart"></div>
+        </div>
+      </div>
+
+      <h2 class="mt-12 text-2xl font-normal">About Me</h2>
+      <div class="mt-6">
+        <div class="nes-container with-title is-rounded bg-cream">
+          <p class="title">About</p>
+          <p class="mt-3 leading-relaxed">
+            Hey There! I'm Harsh (@harsh-0409),<br><br>
+            I enjoy moving around from low-level to high-level technologies and combining them in interesting ways. All while listening to Eminem.<br><br>
+            I'm completly self-taught, which may be reflected in the 'interesting' way I sometimes write code.<br><br>
+            Appart from tech, I also enjoy sports (all of them) and esports as well as languages (human ones) while I dislike Valorant.<br><br>
+            Based in India.
+          </p>
+          <h3 class="text-lg font-normal mt-6">My Favourite Languages</h3>
+          <ul class="nes-list is-disc list-inside my-3 ml-5">
+            <li> Java</li>
+            <li> Python</li>
+            <li> JavaScript</li>
+          </ul>
+          
+          <p class="mt-3 leading-relaxed">
+            I'm always open for conversation and I actually pay attention to my email. So feel free to reach out!
+          </p>
+        </div>
+      </div>
+
+      <footer class="mt-12 text-sm text-center text-ink/70">
+        <p>© 2026 @harsh-0409</p>
+      </footer>
+    </main>
+    <script>
+      hljs.highlightAll();
+      
+      // Handle code highlighting in dark mode
+      const observer = new MutationObserver(() => {
+        document.querySelectorAll('pre code').forEach(el => {
+          hljs.highlightElement(el);
+        });
+      });
+      
+      observer.observe(document.documentElement, { 
+        attributes: true, 
+        attributeFilter: ['data-theme']
+      });
+    </script>
+  </body>
+</html>

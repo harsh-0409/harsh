@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>4loyak!</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/nes.css@2.3.0/css/nes.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body class="min-h-screen text-ink">
+    <div class="page-noise"></div>
+    <main class="max-w-3xl mx-auto px-6 py-12">
+      <header class="mb-10 flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+        <h1 class="text-2xl md:text-3xl font-normal">
+          <a href="/">4loyak!</a>
+        </h1>
+        <nav class="flex flex-wrap gap-2 items-center text-xs md:text-sm">
+          <a class="nes-btn is-success" href="/">Back</a>
+          <a class="nes-btn is-error" href="https://github.com/harsh-0409"><i class="nes-icon github"></i></a>
+          <label class="nes-checkbox flex items-center gap-1">
+            <input id="dark-mode-toggle" type="checkbox" />
+            <span class="text-xs">Dark</span>
+          </label>
+        </nav>
+      </header>
+
+      <section class="nes-container with-title is-rounded bg-cream">
+        <p class="title">Contact</p>
+
+        <p class="text-m leading-relaxed max-w-xl">
+          Want to say hi, share a project idea, or ask a question? Fill out the form below or reach out via email at <a href="mailto:harshraj8835@gmail.com" class="text-primary hover:underline">harshraj8835@gmail.com</a>
+        </p>
+        
+        <form class="mt-4 space-y-6" method="post">
+          <div>
+            <label class="block text-sm mb-2" for="email">Email *</label>
+            <input
+              class="nes-input w-full"
+              id="email"
+              name="email"
+              type="email"
+              placeholder="you@example.com"
+              required
+            />
+          </div>
+          <div>
+            <label class="block text-sm mb-2" for="title">Title *</label>
+            <input
+              class="nes-input w-full"
+              id="title"
+              name="title"
+              type="text"
+              placeholder="Project idea, question, hello"
+              required
+            />
+          </div>
+          <div>
+            <label class="block text-sm mb-2" for="content">Content *</label>
+            <textarea
+              class="nes-textarea w-full"
+              id="content"
+              name="content"
+              rows="6"
+              placeholder="Share a few details..."
+              required
+            ></textarea>
+          </div>
+          <button class="nes-btn is-primary" type="submit">Send</button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
