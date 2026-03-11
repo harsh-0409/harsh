@@ -92,7 +92,7 @@ document.addEventListener("DOMContentLoaded", () => {
   if (contributionsContainer) {
     const fetchGitHubContributions = async () => {
       try {
-        const response = await fetch('https://github-contributions-api.jogruber.de/v4/aloyak?y=last');
+        const response = await fetch('https://github-contributions-api.harsh-0409.de/v4/aloyak?y=last');
         const data = await response.json();
         
         const contributions = [];
